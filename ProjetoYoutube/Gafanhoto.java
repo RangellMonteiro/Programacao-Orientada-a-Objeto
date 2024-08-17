@@ -5,11 +5,10 @@ public class Gafanhoto extends Pessoa {
     private String login;
     private int totAssistido;
 
-    public Gafanhoto(String nome, int idade, String sexo, float experiencia, String login) {
-        super(nome, idade, sexo, experiencia);
+    public Gafanhoto(String nome, int idade, String sexo, String login) {
+        super(nome, idade, sexo);
         this.login = login;
         this.totAssistido = 0;
-        // TODO Auto-generated constructor stub
     }
 
     public String getLogin() {
