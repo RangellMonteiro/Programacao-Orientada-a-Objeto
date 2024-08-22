@@ -2,14 +2,9 @@ package batalhaPokemon;
 
 public class Squirtle extends Pokemon {
 
-    public Squirtle(int level, float xp, int vitorias, int derrotas) {
-        super(level, xp, vitorias, derrotas);
-
-    }
-
-    @Override
-    public void batalhar() {
-
+    public Squirtle(int level, float xp, int vitorias, int derrotas, int empates) {
+        super(level, xp, vitorias, derrotas, empates);
+        // TODO Auto-generated constructor stub
     }
 
     @Override
@@ -38,6 +33,19 @@ public class Squirtle extends Pokemon {
         // TODO Auto-generated method stub
         this.setVitorias(this.getVitorias() + 1);
         this.setXp(this.getXp() + 100);
+    }
+
+    @Override
+    public void status() {
+        // TODO Auto-generated method stub
+        System.out.println("Pokemon: " + this.getNome());
+        System.out.println("Tipo: " + this.getTipo());
+        System.out.println("Level: " + this.getLevel());
+        System.out.println("Experiência: " + this.getXp());
+        System.out.println("Fraqueza: " + this.getFraqueza());
+        System.out.println("Vitorias: " + this.getVitorias());
+        System.out.println("Derrotas: " + this.getDerrotas());
+        System.out.println("Empates: " + this.getEmpates());
     }
 
 }

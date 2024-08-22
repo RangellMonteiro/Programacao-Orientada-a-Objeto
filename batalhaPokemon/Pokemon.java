@@ -8,8 +8,17 @@ public abstract class Pokemon {
     private String fraqueza;
     private int vitorias;
     private int derrotas;
+    private int empates;
 
-    public abstract void batalhar();
+    public int getEmpates() {
+        return empates;
+    }
+
+    public void setEmpates(int empates) {
+        this.empates = empates;
+    }
+
+    public abstract void status();
 
     public abstract void atacar();
 
@@ -19,11 +28,12 @@ public abstract class Pokemon {
 
     public abstract void ganharBatalha();
 
-    public Pokemon(int level, float xp, int vitorias, int derrotas) {
+    public Pokemon(int level, float xp, int vitorias, int derrotas, int empates) {
         this.level = 6;
         this.xp = 0;
         this.vitorias = 0;
         this.derrotas = 0;
+        this.empates = 0;
     }
 
     public String getNome() {

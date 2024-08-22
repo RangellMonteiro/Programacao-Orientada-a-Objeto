@@ -1,5 +1,5 @@
 package batalhaPokemon;
 
-public class Batalha {
+public class Ginasio {
 
 }
