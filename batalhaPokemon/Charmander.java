@@ -2,8 +2,9 @@ package batalhaPokemon;
 
 public class Charmander extends Pokemon {
 
-    public Charmander(int level, float xp, int vitorias, int derrotas, int empates) {
-        super(level, xp, vitorias, derrotas, empates);
+    public Charmander(String tipo, int level, float xp, int vitorias, int derrotas, int empates) {
+        super(tipo, level, xp, vitorias, derrotas, empates);
+        this.setTipo("Fogo");
         // TODO Auto-generated constructor stub
     }
 
@@ -19,6 +20,7 @@ public class Charmander extends Pokemon {
         if (this.getXp() >= 1000) {
             this.setLevel(this.getLevel() + 1);
             this.setXp(0);
+            System.out.println(this.getNome() + "Subiu de level");
         }
     }
 

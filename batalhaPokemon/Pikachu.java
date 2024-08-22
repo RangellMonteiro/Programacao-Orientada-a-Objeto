@@ -2,8 +2,9 @@ package batalhaPokemon;
 
 public class Pikachu extends Pokemon {
 
-    public Pikachu(int level, float xp, int vitorias, int derrotas, int empates) {
-        super(level, xp, vitorias, derrotas, empates);
+    public Pikachu(String tipo, int level, float xp, int vitorias, int derrotas, int empates) {
+        super(tipo, level, xp, vitorias, derrotas, empates);
+        this.setTipo("Eletrico");
         // TODO Auto-generated constructor stub
     }
 
@@ -18,6 +19,7 @@ public class Pikachu extends Pokemon {
         if (this.getXp() >= 1000) {
             this.setLevel(this.getLevel() + 1);
             this.setXp(0);
+            System.out.println(this.getNome() + "Subiu de level");
         }
 
     }

@@ -2,8 +2,9 @@ package batalhaPokemon;
 
 public class Squirtle extends Pokemon {
 
-    public Squirtle(int level, float xp, int vitorias, int derrotas, int empates) {
-        super(level, xp, vitorias, derrotas, empates);
+    public Squirtle(String tipo, int level, float xp, int vitorias, int derrotas, int empates) {
+        super(tipo, level, xp, vitorias, derrotas, empates);
+        this.setTipo("Agua");
         // TODO Auto-generated constructor stub
     }
 
@@ -18,6 +19,7 @@ public class Squirtle extends Pokemon {
         if (this.getXp() >= 1000) {
             this.setLevel(this.getLevel() + 1);
             this.setXp(0);
+            System.out.println(this.getNome() + "Subiu de level");
         }
     }
 
