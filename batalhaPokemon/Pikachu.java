@@ -1,8 +1,8 @@
 package batalhaPokemon;
 
-public class Bulsassauro extends Pokemon {
+public class Pikachu extends Pokemon {
 
-    public Bulsassauro(int level, float xp, int vitorias, int derrotas) {
+    public Pikachu(int level, float xp, int vitorias, int derrotas) {
         super(level, xp, vitorias, derrotas);
         // TODO Auto-generated constructor stub
     }
@@ -14,16 +14,13 @@ public class Bulsassauro extends Pokemon {
 
     @Override
     public void atacar() {
-        System.out.println("Usando folha navalha");
+        System.out.println("Usando choque do trovão");
     }
 
     @Override
     public void subirDeLevel() {
-        if (this.getXp() >= 1000) {
-            this.setLevel(this.getLevel() + 1);
-            this.setXp(0);
-        }
-
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'subirDeLevel'");
     }
 
     @Override

@@ -17,4 +17,22 @@ public class Squirtle extends Pokemon {
         System.out.println("Usando jato de água!");
     }
 
+    @Override
+    public void subirDeLevel() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'subirDeLevel'");
+    }
+
+    @Override
+    public void perderBatalha() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'perderBatalha'");
+    }
+
+    @Override
+    public void ganharBatalha() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'ganharBatalha'");
+    }
+
 }

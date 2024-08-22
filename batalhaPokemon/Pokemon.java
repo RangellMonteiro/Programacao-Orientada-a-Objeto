@@ -13,6 +13,12 @@ public abstract class Pokemon {
 
     public abstract void atacar();
 
+    public abstract void subirDeLevel();
+
+    public abstract void perderBatalha();
+
+    public abstract void ganharBatalha();
+
     public Pokemon(int level, float xp, int vitorias, int derrotas) {
         this.level = 6;
         this.xp = 0;
