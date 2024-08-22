@@ -1,12 +1,20 @@
 package batalhaPokemon;
 
 public class Squirtle extends Pokemon {
-    private String ataqueAgua;
+
+    public Squirtle(int level, float xp, int vitorias, int derrotas) {
+        super(level, xp, vitorias, derrotas);
+
+    }
 
     @Override
     public void batalhar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'batalhar'");
+
+    }
+
+    @Override
+    public void atacar() {
+        System.out.println("Usando jato de água!");
     }
 
 }

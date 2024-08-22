@@ -1,8 +1,8 @@
 package batalhaPokemon;
 
-public class Charmander extends Pokemon {
+public class Bulsassauro extends Pokemon {
 
-    public Charmander(int level, float xp, int vitorias, int derrotas) {
+    public Bulsassauro(int level, float xp, int vitorias, int derrotas) {
         super(level, xp, vitorias, derrotas);
         // TODO Auto-generated constructor stub
     }
@@ -15,8 +15,7 @@ public class Charmander extends Pokemon {
 
     @Override
     public void atacar() {
-        System.out.println("Usando lança chamas!");
-
+        System.out.println("Usando folha navalha");
     }
 
 }
