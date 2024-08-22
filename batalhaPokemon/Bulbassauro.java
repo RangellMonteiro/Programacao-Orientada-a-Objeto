@@ -1,8 +1,8 @@
 package batalhaPokemon;
 
-public class Bulsassauro extends Pokemon {
+public class Bulbassauro extends Pokemon {
 
-    public Bulsassauro(int level, float xp, int vitorias, int derrotas, int empates) {
+    public Bulbassauro(int level, float xp, int vitorias, int derrotas, int empates) {
         super(level, xp, vitorias, derrotas, empates);
         // TODO Auto-generated constructor stub
     }
@@ -46,6 +46,12 @@ public class Bulsassauro extends Pokemon {
         System.out.println("Vitorias: " + this.getVitorias());
         System.out.println("Derrotas: " + this.getDerrotas());
         System.out.println("Empates: " + this.getEmpates());
+    }
+
+    @Override
+    public void empatarBatalha() {
+        // TODO Auto-generated method stub
+        this.setEmpates(this.getEmpates() + 1);
     }
 
 }

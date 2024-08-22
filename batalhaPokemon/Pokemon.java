@@ -28,6 +28,8 @@ public abstract class Pokemon {
 
     public abstract void ganharBatalha();
 
+    public abstract void empatarBatalha();
+
     public Pokemon(int level, float xp, int vitorias, int derrotas, int empates) {
         this.level = 6;
         this.xp = 0;

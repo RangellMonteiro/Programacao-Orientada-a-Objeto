@@ -48,4 +48,10 @@ public class Squirtle extends Pokemon {
         System.out.println("Empates: " + this.getEmpates());
     }
 
+    @Override
+    public void empatarBatalha() {
+        // TODO Auto-generated method stub
+        this.setEmpates(this.getEmpates() + 1);
+    }
+
 }
