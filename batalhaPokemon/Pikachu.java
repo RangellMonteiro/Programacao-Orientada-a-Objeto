@@ -20,19 +20,24 @@ public class Pikachu extends Pokemon {
     @Override
     public void subirDeLevel() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'subirDeLevel'");
+        if (this.getXp() >= 1000) {
+            this.setLevel(this.getLevel() + 1);
+            this.setXp(0);
+        }
+
     }
 
     @Override
     public void perderBatalha() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'perderBatalha'");
+        this.setVitorias(this.getVitorias() - 1);
     }
 
     @Override
     public void ganharBatalha() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'ganharBatalha'");
+        this.setVitorias(this.getVitorias() + 1);
+        this.setXp(this.getXp() + 100);
     }
 
 }

@@ -29,13 +29,15 @@ public class Bulsassauro extends Pokemon {
     @Override
     public void perderBatalha() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'perderBatalha'");
+        this.setVitorias(this.getVitorias() - 1);
+
     }
 
     @Override
     public void ganharBatalha() {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'ganharBatalha'");
+        this.setVitorias(this.getVitorias() + 1);
+        this.setXp(this.getXp() + 100);
     }
 
 }
