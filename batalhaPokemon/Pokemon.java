@@ -30,9 +30,10 @@ public abstract class Pokemon {
 
     public abstract void empatarBatalha();
 
-    public Pokemon(String tipo, int level, float xp, int vitorias, int derrotas, int empates) {
+    public Pokemon(String nome, String tipo, int level, float xp, int vitorias, int derrotas, int empates) {
+        this.nome = nome;
         this.tipo = tipo;
-        this.level = 6;
+        this.setLevel(6);
         this.xp = 0;
         this.vitorias = 0;
         this.derrotas = 0;

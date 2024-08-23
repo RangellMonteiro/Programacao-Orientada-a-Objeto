@@ -2,9 +2,8 @@ package batalhaPokemon;
 
 public class Charmander extends Pokemon {
 
-    public Charmander(String tipo, int level, float xp, int vitorias, int derrotas, int empates) {
-        super(tipo, level, xp, vitorias, derrotas, empates);
-        this.setTipo("Fogo");
+    public Charmander(String nome, String tipo, int level, float xp, int vitorias, int derrotas, int empates) {
+        super(nome, tipo, level, xp, vitorias, derrotas, empates);
         // TODO Auto-generated constructor stub
     }
 

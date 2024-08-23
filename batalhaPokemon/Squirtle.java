@@ -2,9 +2,8 @@ package batalhaPokemon;
 
 public class Squirtle extends Pokemon {
 
-    public Squirtle(String tipo, int level, float xp, int vitorias, int derrotas, int empates) {
-        super(tipo, level, xp, vitorias, derrotas, empates);
-        this.setTipo("Agua");
+    public Squirtle(String nome, String tipo, int level, float xp, int vitorias, int derrotas, int empates) {
+        super(nome, tipo, level, xp, vitorias, derrotas, empates);
         // TODO Auto-generated constructor stub
     }
 

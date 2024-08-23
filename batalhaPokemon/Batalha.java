@@ -6,6 +6,13 @@ public class Batalha {
     // Atributos
     private Pokemon desafiado;
     private Pokemon desafiante;
+    private boolean confirmada;
+
+    public void confirmarLuta(Pokemon p1, Pokemon p2) {
+        this.confirmada = true;
+        this.desafiado = p1;
+        this.desafiante = p2;
+    }
 
     public void batalhar() {
         System.out.println("POKEMON DESAFIADO!");

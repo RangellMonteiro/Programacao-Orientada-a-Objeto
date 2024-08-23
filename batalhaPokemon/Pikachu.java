@@ -2,9 +2,8 @@ package batalhaPokemon;
 
 public class Pikachu extends Pokemon {
 
-    public Pikachu(String tipo, int level, float xp, int vitorias, int derrotas, int empates) {
-        super(tipo, level, xp, vitorias, derrotas, empates);
-        this.setTipo("Eletrico");
+    public Pikachu(String nome, String tipo, int level, float xp, int vitorias, int derrotas, int empates) {
+        super(nome, tipo, level, xp, vitorias, derrotas, empates);
         // TODO Auto-generated constructor stub
     }
 
